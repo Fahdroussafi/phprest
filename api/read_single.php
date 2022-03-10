@@ -10,7 +10,7 @@ include_once('../core/initialize.php');
 
 $post = new Post($db);
 
-$post->id = isset($_GET['id']) ? $_GET['id'] : die();
+$post->id = isset($_GET['id']) ? $_GET['id'] : die(); //get by id
 $post->read_single();
 
 $post_arr = array(
